@@ -68,6 +68,7 @@ img{
 }
 
 
+
 /* CONTAINER*/
 .container{
   width: 100%;
@@ -89,8 +90,11 @@ img{
 }
 
 .card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 900px;
-  height: 360px;
+  height: 400px;
   padding: 20px;
   background-color: #fff;
   border-radius: 5px;
@@ -107,6 +111,7 @@ img{
   padding: 20px;
   margin: 0;
   transition: all 0.3s ease;
+  text-align: center;
 }
 
 .price-item:hover{
@@ -121,26 +126,48 @@ img{
   border-radius: 5px;
 }
 
-
 .price-item-link {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  color: var(--text-color)
 }
 
 
 .price-item-img {
+  display: inline-block;
+  object-fit: contain;
   width: 100px;
   height: 100px;
 }
 
 .price-item-header {
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  font-size: 32px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: var(--header-color);
 }
 .price-item-info {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  padding-top: 5px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
 }
 .price-item-price {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 32px;
+  color: var(--price-color);
 }
 .price-item-currency {
+  font-size: 20px;
 }
 .price-item-period {
+  font-size: 18px;
 }
